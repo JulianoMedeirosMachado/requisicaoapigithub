@@ -1,0 +1,41 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+.modal.is-active {
+    animation: navAnim .2s ease-in-out;
+}
+
+.image {
+    width: 10%;
+}
+
+.div-image-user {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+}
+
+.username {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#repo-container {
+    display: flex;
+    justify-content: center;
+  }
+
+.repo-block {
+    background-color: green;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .repo-block + .repo-block {
+    margin-left: 10px;
+  }
+  

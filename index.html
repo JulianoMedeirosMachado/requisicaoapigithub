@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--link para o bulma CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!--link para o style.css-->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="scriptBulma.js"></script>
+    <script src="script.js"></script>
+
+    <title>Visualizador</title>
+
+</head>
+<body>
+
+    <div id="modal-inicio" class="modal is-active">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+          <header class="modal-card-head">
+            <p class="modal-card-title"> Nome de usuário </p>
+          </header>
+          <section class="modal-card-body">
+            <input type="text" id="username" class="input is-success" placeholder="Insira o nome de usuário do Github">
+          </section>
+          <footer class="modal-card-foot">
+            <button id="btn-user" class="button is-success" onclick="loadData()">Carregar dados</button>
+          </footer>
+        </div>
+      </div>
+
+    <!--<div class="container is-max-desktop is-fullheight">
+        <div class="notification is-primary has-background-black-bis has-text-centered">
+            <input type="text" id="username" class="input is-info" placeholder="Insira o nome de usuário do Github">
+            <button id="btn-user" class="button is-dark">Mostrar Repositórios</button>
+        </div>
+    </div>
+    -->
+    <div id="result">
+        <div class="div-image-user">
+            <figure class="image">
+                <img src="" alt="Foto do usuário" id="user-avatar" class="avatar is-rounded">
+            </figure>
+        </div>
+        <h1 id="user-name" class="username"></h1>
+            <div id="repo-container" class="columns is-multiline is-centered"></div>
+          </div>
+    </div>
+
+</body>
+</html>
