@@ -40,10 +40,10 @@ function loadData() {
             repoName.textContent = repo.name;
           
             var repoLanguage = document.createElement('p');
-            repoLanguage.textContent = 'Language: ' + repo.language;
+            repoLanguage.textContent = 'Linguagem: ' + repo.language;
           
             var repoDescription = document.createElement('p');
-            repoDescription.textContent = 'Description: ' + repo.description;
+            repoDescription.textContent = 'Descrição: ' + repo.description;
           
             repoBlock.appendChild(repoName);
             repoBlock.appendChild(repoLanguage);
